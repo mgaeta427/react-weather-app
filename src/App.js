@@ -11,7 +11,7 @@ return (
     {" "} 
   <a 
   href="https://github.com/mgaeta427/react-weather-app"
-  target="_blank"
+  target="_blank" rel="noopener noreferrer"
   
   
   >
