@@ -7,14 +7,15 @@ return (
 <div className="App">
   <div className= "container">
   
-  <Weather />
+  <Weather defaultCity="Berlin" />
   
   <footer>
     This Project was coded by Maribel Boban and is
     {" "} 
   <a 
   href="https://github.com/mgaeta427/react-weather-app"
-  target="_blank" rel="noopener noreferrer"
+  target="_blank" 
+  rel="noopener noreferrer"
   
   
   >
