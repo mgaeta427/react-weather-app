@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
-import weatherIcon from "./WeatherIcon";
 import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
-    const [city, setCity]= useState(props.defaultCity);
-    
+        
     function handleResponse(response) {
             setWeatherData({
             ready: true,
@@ -15,7 +13,7 @@ export default function Weather(props) {
             humidity: response.data.temperature.humidity,
             date: new Date(response.data.time * 1000),
             description: response.data.condition.description,
-            icon: response.data.weather[0].icon,
+            icon: response.data.condition.icon,
             wind: response.data.wind.speed,
             city: response.data.city,
         });
@@ -75,8 +73,8 @@ export default function Weather(props) {
            
              );
 } else {
-    const apiKey = "877c4d8b4ef33f4602196a43ff1b0052";
-    let apiUrl = `https://api.openweathermap.org/data/3.0/weather?q=${props.defaultCity}&key=${apiKey}&units=metric`;
+    const apiKey = "9370643565959975t4bde2o89fba56f7";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
     
     
    axios.get(apiUrl).then(handleResponse);
