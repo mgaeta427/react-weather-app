@@ -7,7 +7,7 @@ return (
 <div className="App">
   <div className= "container">
   
-  <Weather defaultCity="Berlin" />
+  <Weather defaultCity="New york" />
   
   <footer>
     This Project was coded by Maribel Boban and is
