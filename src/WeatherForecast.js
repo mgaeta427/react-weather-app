@@ -14,8 +14,9 @@ export default function WeatherForecast(props) {
 
 
     function handleResponse(response) {
-        setLoaded(true);
         setForecast(response.data.daily);
+        setLoaded(true);
+        
     }
 
 
@@ -39,7 +40,8 @@ export default function WeatherForecast(props) {
        );
        } else {
 
-   let apiKey = "ebef9ca4a8de66ed586fac628fade056";
+        
+    let apiKey = "9370643565959975t4bde2o89fba56f7";
     let longitude = props.coordinates.longitude;
     let latitude = props.coordinates.latitude;
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
