@@ -37,7 +37,8 @@
     line-height: 64px;
     margin-left: 5px;
     font-weight: 400;
-    margin-left: 10px;
+    display: inline-block;
+    
 }
 
 .Weather canvas {
@@ -52,4 +53,8 @@
     line-height: 1;
     top: -34px;
     
+}
+
+.Weather a {
+    text-decoration: none;
 }
